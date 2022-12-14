@@ -36,12 +36,6 @@ class NaughtyNiceCheck:
                     self.character_pair_nonrepeat = True
         except IndexError:
             return None
-        #character_pairs = re.findall(pattern=r"[a-z]{2}", string=input_string)
-        #character_pair_counts = [(pair, character_pairs.count(pair)) for pair in character_pairs]
-        #for pair in character_pair_counts:
-        #    _, count = pair
-        #    if count > 1:
-        #        self.character_pair_nonrepeat = True
     def naughty_or_nice_partone(self):
         if (self.three_vowels == True) and (self.repeated_characters == True) and (self.disallowed_substring == False):
             self.nice_decision = True
