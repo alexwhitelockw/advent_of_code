@@ -1,4 +1,3 @@
-from collections import defaultdict
 from enum import StrEnum
 import numpy as np
 
