@@ -74,12 +74,9 @@ class LogicGate:
         except KeyError:
 
             return None
-    
-    def check_value(self, instruction):
-        _, assignment = instruction.split("->")
-        return self.value_dictionary.get(assignment.strip(), None)   
 
 logic_gate = LogicGate()
+
 while True:
     for _, instruction in enumerate(sorted(aoc_day_seven_data)):
         logic_gate.logic_gate_type(instruction)
