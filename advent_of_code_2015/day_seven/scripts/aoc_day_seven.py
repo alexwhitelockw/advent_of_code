@@ -72,7 +72,6 @@ class LogicGate:
             to_value_number = ~int(from_value)
             self.value_dictionary[to_value.strip()] = np.array([to_value_number], dtype="uint16")[0]
         except KeyError:
-
             return None
 
 logic_gate = LogicGate()
