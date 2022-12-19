@@ -2,7 +2,7 @@ from enum import StrEnum
 import re
 
 if __name__ == "__main__":
-
+    
     class CharacteristicVariable(StrEnum):
         CHILDREN = "children"
         CATS = "cats"
