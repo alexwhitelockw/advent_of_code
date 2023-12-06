@@ -5,6 +5,8 @@ import re
 with open ("advent_of_code_2023/day_six/data_input.txt") as data_input:
     race_data = [line.strip() for line in data_input]
 
+# Part One Answer
+
 race_duration_numeric = []
 
 for race_information in race_data:
@@ -36,6 +38,8 @@ part_one_answer = functools.reduce(operator.mul, race_distances_met, 1)
 
 print(f"The boat can win a total of {part_one_answer} ways across the races.")
 
+# Part Two Answer
+
 actual_race_details = []
 
 for race_information in race_data:
@@ -56,3 +60,5 @@ while boat_speed <= actual_race_time:
         distance_met += 1
 
     boat_speed += 1
+
+print(f"The boat can win a total of {distance_met} ways.")
